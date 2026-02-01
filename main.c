@@ -1,87 +1,153 @@
-#include <stdio.h>
+//           Arithmetic operators
 
-// int sum (int a , int b){
-//     return a + b;
-// }
+// 1. Add two numbers.
+// #include <stdio.h>
 // int main() {
-    // int a;
-    // a = 6;
-    // int anshi;
-    // anshi = 9;
-    // printf("%d" , a);
-    // printf("%d" , anshi);
-    // float b = 1.4;
-    // printf("%d" , b);
-    // char c;
-    // c = 'a';
-    // printf("%f" , c);
-//     printf("%d\n" , sum(10,20));
-//     return 0;
-// } 
-// int main() {
-    // int a = 19;
-    // float b = 7.989;
-    // char grade = 'a';
-    // printf("%d\n" , a);
-    // printf("%.2f\n" , b);
-    // printf("%c\n" , grade);
-//     int num = 3;
-//     printf("%d\n" , num);
+//     int a , b;
+//     scanf("%d %d" ,&a,&b);
+//     printf("Sum = %d\n" ,a+b);
 //     return 0;
 // }
 
-// int main() {
-//     int num = 90;
-//     printf("previous value : %d\n" , num);
-//     num = num+5;
-//     printf("add value : %d\n" , num);
-//     num = 10;
-//     printf("new value : %d\n" , num);
-//     return 0;
-// }
-
-
-// int main() {
-//     int num = 22;
-    
-//     // Finding size of num
-//     printf("%lu bytes\n", sizeof(num));
-//     return 0;
-// }
-
-// int main(){
-//     int a = 90;
-//     float b = 19.9;
-//     char c = 'A';
-//     double d = 9.9981;
-//     printf("int = %d\n" , a);
-//     printf("flot = %.2f\n" , b);
-//     printf("double data type = %.3lf\n" , d );
-//     printf("character = %c\n" , c);
-//     printf("the size of int: %lu\n" , sizeof(a));
-//     printf("size of float : %lu bytes\n" , sizeof(b));
-//     return 0;
-// }
-
-// void greet (){
-//     printf("hello world\n");
-//     printf("anshika\n");
-// }
-// int main(){
-//     greet();
-//     return 0;
-// }
-
+// 2. Remainder of two numbers
+// #include <stdio.h>
 // int main () {
-//     int a = 25, b = 5;
-//     printf("a+b : %d\n" , a+b);
-//     printf("a-b : %d\n" , a-b);
-//     printf("a*b : %d\n" , a*b);
-//     printf("a/b : %d\n" , a/b);
-//     printf("a%%b : %d\n" , a%b);
-//     printf("+a : %d\n" , +a);
-//     printf("-a : %d\n" , -a);
-//     printf("a++ : %d\n" , a++);
-//     printf("a-- : %d\n" , a--);
+//     int a , b;
+//     scanf("%d %d" , &a ,&b);
+//     printf("remainder = %d\n" , a%b);
+//     return 0;
+// }
+
+// 3. Average of three numbers
+// #include <stdio.h>
+// int main () {
+//     int a,b,c;
+//     scanf("%d %d %d" ,&a,&b,&c);
+//     printf("Avg = %d\n" , (a+b+c)/3);
+//     return 0;    
+// }
+
+// 4. Simple Interest
+// #include <stdio.h>
+// int main () {
+//     int p,r,t;
+//     scanf("%d %d %d" ,&p,&r,&t);
+//     printf("S.I = %d\n" , (p*r*t)/100);
+//     return 0;
+// }
+
+//               Relational operators
+ 
+// 1. Check equal no.
+// #include <stdio.h>
+// int main () {
+//     int a,b;
+//     scanf("%d %d" ,&a,&b);
+//     if (a==b) printf("Equal\n");
+//     else printf("Not equal\n");
+//     return 0;    
+// }
+
+// 2. Greater of two numbers
+// #include <stdio.h>
+// int main () {
+//     int a,b;
+//     scanf("%d %d" , &a,&b);
+//     if (a>b) printf("%d is greater\n" ,a);
+//     else printf("%d is greater\n" ,b);
+//     return 0;
+// }
+
+// 3. Number less than 100
+// #include <stdio.h>
+// int main () {
+//     int a;
+//     scanf("%d" ,&a);
+//     if (a<100) printf("Less than 100\n");
+//     else printf("Not less than 100\n");
+//     return 0;
+// }
+
+//          Logical operators 
+// 1. Number b/w 1 and 100
+// #include <stdio.h>
+// int main () {
+//     int num;
+//     scanf("%d" , &num);
+//     if (num>0 && num<101) printf("B/w 1 and 100\n");
+//     else printf("Not b/w 1 and 100\n");
+//     return 0;
+// }
+
+// 2. Pass check
+// #include <stdio.h>
+// int main () {
+//     int marks;
+//     scanf("%d" ,&marks);
+//     if (marks>=40) printf("Pass\n");
+//     else printf("Fail\n");
+//     return 0;    
+// }
+
+// 3. Vowel Check
+// #include <stdio.h>
+// int main () {
+//     char ch;
+//     scanf("%c" ,&ch);
+//     if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+//     printf("vowel\n");
+//     else printf("consonant\n");
+//     return 0;    
+// }
+
+//           Conditional(Ternary) operator
+// 1. Largest of two no.
+// #include <stdio.h>
+// int main () {
+//     int a,b;
+//     scanf("%d %d" ,&a,&b);
+//     printf("%d\n" , (a>b) ? a:b);
+//     return 0 ;
+// }
+
+// 2. Even or Odd
+// #include <stdio.h>
+// int main () {
+//     int num;
+//     scanf("%d" ,&num);
+//     printf("%s\n" , (num%2==0) ? "Even" : "Odd");
+//     return 0;
+// }
+
+//          Increment / Decrement
+// 1. Pre-increment
+// #include <stdio.h>
+// int main() {
+//     int a = 5;
+//     printf("%d\n", ++a);
+//     return 0;
+// }
+
+// 2. Post-increment
+// #include <stdio.h>
+// int main() {
+//     int a = 5;
+//     printf("%d\n", a++);
+//     return 0;
+// }
+
+// 3. Pre-decrement
+// #include <stdio.h>
+// int main() {
+//     int a = 5;
+//     printf("%d\n", --a);
+//     return 0;
+// }
+
+// // 4. Post-decrement
+// #include <stdio.h>
+// int main() {
+//     int a = 5;
+//     printf("%d\n", a--);
 //     return 0;
 // }
