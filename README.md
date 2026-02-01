@@ -1,2 +1,2 @@
-# c-fahhh
-my first c  baddie code
+# C-Love
+My first C code
