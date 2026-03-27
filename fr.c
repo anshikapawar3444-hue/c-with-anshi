@@ -143,6 +143,36 @@
 //     return a*b;
 // }
 
+// QUES 5 swap two numbers
+// #include <stdio.h>
+// void swap (int a ,int b) {
+//     int temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+//     printf("after swap = %d %d\n",a,b);
+// }
+// int main () {
+//     int x,y;
+//     scanf("%d %d",&x,&y);
+//     printf("before swap = %d %d\n",x,y);
+//     swap (x,y);
+//     return 0;
+// }
+#include <stdio.h>
+void checkNo(int n) {
+    if (n%2==0)
+    printf("The entered no is even\n");
+    else 
+    printf("The entered no is odd\n");
+}
+int main () {
+    int n;
+    scanf("%d",&n);
+    checkNo(n);
+    return 0;
+}
+
 
 // RECURSION
 
@@ -209,3 +239,4 @@
 //     else 
 //     return n*fac(n-1);
 // }
+
