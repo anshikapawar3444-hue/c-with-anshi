@@ -196,16 +196,16 @@
 //     return facN;
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int fac(int n);
-int main () {
-    printf("%d\n",fac(5));
-    return 0;
-}
-int fac(int n) {
-    if (n==0)
-    return 1;
-    else 
-    return n*fac(n-1);
-}
+// int fac(int n);
+// int main () {
+//     printf("%d\n",fac(5));
+//     return 0;
+// }
+// int fac(int n) {
+//     if (n==0)
+//     return 1;
+//     else 
+//     return n*fac(n-1);
+// }
