@@ -159,19 +159,21 @@
 //     swap (x,y);
 //     return 0;
 // }
-#include <stdio.h>
-void checkNo(int n) {
-    if (n%2==0)
-    printf("The entered no is even\n");
-    else 
-    printf("The entered no is odd\n");
-}
-int main () {
-    int n;
-    scanf("%d",&n);
-    checkNo(n);
-    return 0;
-}
+
+// QUES 6 check even and odd
+// #include <stdio.h>
+// void checkNo(int n) {
+//     if (n%2==0)
+//     printf("The entered no is even\n");
+//     else 
+//     printf("The entered no is odd\n");
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     checkNo(n);
+//     return 0;
+// }
 
 
 // RECURSION
