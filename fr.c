@@ -302,6 +302,9 @@
 // }
 
 // call by reference
+// *a = value at address
+// &x = address of variable 
+// pointer = stores address
 // QUES 1 swap two numbers
 
 // #include <stdio.h>
@@ -321,17 +324,17 @@
 // }
 
 // QUES 2 max of two no
-#include <stdio.h>
-int findMax (int *a,int *b) {
-    if (*a>*b)
-    return *a;
-    else
-    return *b;
-}
-int main () {
-    int x,y;
-    scanf("%d %d",&x,&y);
-    int c = findMax(&x,&y);
-    printf("%d\n",c);
-    return 0;
-}
+// #include <stdio.h>
+// int findMax (int *a,int *b) {
+//     if (*a>*b)
+//     return *a;
+//     else
+//     return *b;
+// }
+// int main () {
+//     int x,y;
+//     scanf("%d %d",&x,&y);
+//     int c = findMax(&x,&y);
+//     printf("%d\n",c);
+//     return 0;
+// }
