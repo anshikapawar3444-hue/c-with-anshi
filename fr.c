@@ -338,3 +338,76 @@
 //     printf("%d\n",c);
 //     return 0;
 // }
+
+// QUES 12 
+// #include <stdio.h>
+
+// float calculateFee(int hours, int type);
+
+// int main() {
+//     int hours, type;
+//     scanf("%d %d", &hours, &type);
+//     float fee = calculateFee(hours, type);
+//     printf("%.2f", fee);   
+//     return 0;
+// }
+// float calculateFee(int hours, int type) {
+//     float fee = 0;
+//     if (hours <= 2) {
+//         fee = 0;
+//     }
+//     else if (hours <= 5) {
+//         fee = (hours - 2) * 10;
+//     }
+//     else {
+//         fee = (3 * 10) + (hours - 5) * 20;
+//     }
+//     if (type == 2) {           
+//         fee = fee * 0.5;
+//     }
+//     else if (type == 3) {     
+//         fee = fee * 1.25;
+//     }
+//     return fee;
+// }
+
+// QUES 13 check no is prime or not 
+// #include <stdio.h>
+// int checkIsPrime (int n) {
+//     if (n<=1){
+//         return 0;
+//     }
+//     for (int i=2;i*i<=n;i++) {
+//         if (n%i==0)
+//         return 0;
+//     }
+//     return 1;
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     if (checkIsPrime(n)) {
+//         printf("Prime\n");
+//     }
+//     else {
+//         printf("Not Prime\n");
+//     }
+//     return 0;
+// }
+
+// QUES 14 alphabet pattern.
+// #include <stdio.h>
+// void pattern(int n) {
+//     for (int i = 0;i<n;i++) {
+//         for (int j=i;j<n;j++) {
+//             printf("%c",'A'+j);
+//         }
+//         printf("\n");
+//     }
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     pattern(n);
+//     return 0;
+// }
