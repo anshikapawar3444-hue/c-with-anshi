@@ -175,70 +175,163 @@
 //     return 0;
 // }
 
-
-// RECURSION
-
+// QUES 7 decimal to binary conversion
 // #include <stdio.h>
 
-// void printhw (int count);
+// void decimalToBinary(int n) {
+//     if (n==0) 
+//     return ;
+//     decimalToBinary(n/2);
+//     printf("%d",n%2);
+// }
 // int main () {
-//     printhw(5);
+//     int num;
+//     scanf("%d",&num);
+//     if (num==0)
+//     printf("0");
+//     else
+//     decimalToBinary(num);
 //     return 0;
 // }
-// void printhw (int count) {
-//     if (count == 0) 
-//     return ;
-//     printf("hello world\n");
-//     printhw(count-1);
-// }
 
-// QUES 4 sum of first n natural numbers
-
+// QUES 8 factorial using function
 // #include <stdio.h>
-// int sum(int n);
-
+// int fac(int n);
 // int main () {
 //     int n;
 //     scanf("%d",&n);
-//     printf("%d\n",sum(n));
-//     return 0;
-// }
-// int sum(int n) {
-//     if (n==1)
-//     return 1; // base case
-//     int sumNm1 = sum(n-1);
-//     int sumN = sumNm1 + n;
-//     return sumN;
-// }
-
-// QUES 5 factorial using recursion
-
-// #include <stdio.h>
-
-// int fac(int n);
-// int main () {
-//     printf("%d\n",fac(5));
+//     int c = fac(n);
+//     printf("%d\n",c);
 //     return 0;
 // }
 // int fac(int n) {
-//     if (n==0)
-//     return 1;
-//     int facNm1 = fac(n-1);
-//     int facN = facNm1 * n;
-//     return facN;
+//     int fact=1;
+//     for (int i=1;i<=n;i++) {
+//         fact *= i;
+//     }
+//     return fact;
 // }
 
+// QUES 9 power of a no.
 // #include <stdio.h>
-
-// int fac(int n);
+// int power (int a,int b);
 // int main () {
-//     printf("%d\n",fac(5));
+//     int x,y;
+//     scanf("%d %d",&x,&y);
+//     int c = power(x,y);
+//     printf("%d\n",c);
 //     return 0;
 // }
-// int fac(int n) {
-//     if (n==0)
-//     return 1;
+// int power (int a,int b) {
+//     int p=1;
+//     for (int i=1;i<=b;i++) {
+//         p=p*a;
+//     }
+//     return (p);
+// }
+
+// QUES 10 any year entered can help finding leap year
+// #include <stdio.h>
+// void year(int n) {
+//     if (n%4==0 && n%100!=0 || n%400==0) {
+//         printf("%d is a leap year",n);
+//     }
 //     else 
-//     return n*fac(n-1);
+//     printf("%d is not a leap year",n);
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     year(n);
+//     return 0;
 // }
 
+// QUES 11 Define a function that receives 4 integer values and returns sum, product,average of these numbers.
+
+// #include <stdio.h>
+// int sum(int a, int b, int c,int d) {
+//     return a+b+c+d;
+// }
+// int product(int a ,int b,int c,int d) {
+//     return a*b*c*d;
+// }
+// int average(int a,int b,int c,int d) {
+//     return (a+b+c+d)/4;
+// }
+// int main () {
+//     int x,y,z,w;
+//     scanf("%d %d %d %d",&x,&y,&z,&w);
+//     int sum1 = sum(x,y,z,w);
+//     int product1 = product(x,y,z,w);
+//     int average1 = average(x,y,z,w);
+//     printf("%d %d %d",sum1,product1,average1);
+//     return 0;
+// }
+
+// Call by value and call by reference
+// QUES 1 use a fun to add 5 bonus marks using call by value
+
+// #include <stdio.h>
+// int marks(int n) {
+//     return n+5;
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     int c = marks(n);
+//     printf("Marks inside function = %d\n",c);
+//     printf("marks outside of function = %d\n",n);
+//     return 0;
+// }
+
+// QUES 2 find max of two fun
+
+// #include <stdio.h>
+// int findMax(int a,int b) {
+//     if (a>b)
+//     return a;
+//     else
+//     return b;
+// }
+// int main () {
+//     int x,y;
+//     scanf("%d %d",&x,&y);
+//     int z = findMax(x,y);
+//     printf("%d\n",z);
+//     return 0;
+// }
+
+// call by reference
+// QUES 1 swap two numbers
+
+// #include <stdio.h>
+// void swap(int *a,int *b) {
+//     int *temp;
+//     *temp = *a;
+//     *a = *b;
+//     *b = *temp;
+// }
+// int main () {
+//     int x,y;
+//     scanf("%d %d",&x,&y);
+//     printf("before swap = %d %d\n",x,y);
+//     swap(&x,&y);
+//     printf("after swap = %d %d\n",x,y);
+//     return 0;
+// }
+
+// QUES 2 max of two no
+#include <stdio.h>
+int findMax (int *a,int *b) {
+    if (*a>*b)
+    return *a;
+    else
+    return *b;
+}
+int main () {
+    int x,y;
+    scanf("%d %d",&x,&y);
+    int c = findMax(&x,&y);
+    printf("%d\n",c);
+    return 0;
+}
