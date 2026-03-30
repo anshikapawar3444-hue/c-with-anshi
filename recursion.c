@@ -37,7 +37,9 @@
 
 // int fac(int n);
 // int main () {
-//     printf("%d\n",fac(5));
+//     int n;
+//     scanf("%d",&n);
+//     printf("%d\n",fac(n));
 //     return 0;
 // }
 // int fac(int n) {
@@ -98,5 +100,100 @@
 //     return 0;
 // }
 
-// QUES 6 Write a program in C to count the digits of a given number using recursion.
+// QUES 6 Write a program in C to print the array elements using recursion.
+// #include <stdio.h>
+// void printArray(int arr[],int n,int idx) {
+//     if (idx==n) {
+//         return ;
+//     }
+//     printf("%d ",arr[idx]);
+//     printArray(arr,n,idx+1);
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for (int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     printf("The elements in the array are : \n");
+//     printArray(arr,n,0);
+//     return 0;
+// }
 
+// QUES 7 Write a program in C to count the digits of a given number using recursion.
+// #include <stdio.h>
+// int countDigits (int n) {
+//     if (n==0)
+//     return 0;
+//     else
+//     return 1+countDigits(n/10); 
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     if (n==0)
+//     printf("1\n");
+//     else 
+//     printf("%d\n",countDigits(n));
+//     return 0;
+// }
+
+// QUES 8 Write a program in C to find the sum of digits of a number using recursion.
+// #include <stdio.h>
+// int sumDigits(int n) {
+//     if (n==0)
+//     return 0;
+//     else
+//     return (n%10)+sumDigits(n/10);
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     printf("%d\n",sumDigits(n));
+//     return 0;
+// }
+
+// QUES 8 Find sum of first n natural numbers using recursion
+// #include <stdio.h>
+// int sum(int n) {
+//     if (n==0)
+//     return 0;
+//     return n+sum(n-1);
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     int c = sum(n);
+//     printf("%d\n",c);
+//     return 0;
+// }
+
+// QUES 9 Reverse a number using recursion
+
+
+// #include <stdio.h>
+// void swapBalance(int *a,int *b) {
+//     int temp;
+//     temp = *a;
+//     *a = *b;
+//     *b = temp;
+// }
+// int main () {
+//     int x,y;
+//     scanf("%d %d",&x,&y);
+//     if (x==y){
+//         printf("Same balance , no swap needed.");
+//     }
+//     else if (x<0 || y<0) {
+//         printf("Invalid input");
+//     }
+//     else if (x==0 || y==0) {
+//         printf("Zero balance.");
+//     }
+//     else {
+//         swapBalance(&x,&y);
+//         printf("after swaping balances = %d %d\n",x,y);
+//     }
+//     return 0;
+// }
