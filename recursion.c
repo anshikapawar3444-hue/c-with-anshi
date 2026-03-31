@@ -169,7 +169,73 @@
 //     return 0;
 // }
 
-// QUES 9 Reverse a number using recursion
+// QUES 9 Write a program in C to get the largest element of an array using recursion.
+
+// #include <stdio.h>
+// int max(int arr[],int n) {
+//     if (n==1) {
+//         return arr[0];
+//     }
+//     int m = max(arr,n-1);
+//     return (arr[n-1]>m ? arr[n-1]:m);
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for (int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     printf("largest = %d\n",max(arr,n));
+//     return 0;
+// }
+
+// QUES 10 reverse no using recursion
+
+// #include <stdio.h>
+// int rev = 0;
+// int revNo(int n) {
+//     if (n==0)
+//     return rev;
+//     rev = rev*10+(n%10);
+//     return revNo(n/10);
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     int c = revNo(n);
+//     printf("%d\n",c);
+//     return 0;
+// }
+
+// QUES 11 Power
+// #include <stdio.h>
+
+// int power (int x,int y) {
+//     if (y==0)
+//     return 1;
+//     return x*power(x,y-1);
+// }
+// int main () {
+//     int x,y;
+//     scanf("%d %d",&x,&y);
+//     printf("%d\n",power(x,y));
+//     return 0;
+// }
+
+// QUES 12 gcd
+// #include <stdio.h>
+// int gcd (int a,int b) {
+//     if (b==0)
+//     return a;
+//     return gcd(b,a%b);
+// }
+// int main () {
+//     int a,b;
+//     scanf("%d %d",&a,&b);
+//     printf("%d\n",gcd(a,b));
+//     return 0;
+// }
 
 
 // #include <stdio.h>
