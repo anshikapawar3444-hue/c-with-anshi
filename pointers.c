@@ -22,7 +22,10 @@
 // char *ptr ;
 // float *ptr ;
 
-// format specifier
-// printf("%p",&age);
+// format specifier 
+// %u = unsigned int , %p = hexadecimal value 
+
+// printf("%p",&age); 
 // printf("%p",ptr);
 // printf("%p",&ptr);
+
