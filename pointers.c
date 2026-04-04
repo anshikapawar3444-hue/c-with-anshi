@@ -178,3 +178,19 @@
 //     *avg = (a+b)/2;
 // }
 
+// QUES 4 max b/w two no.
+
+// #include <stdio.h>
+// void max(int *a,int *b);
+// int main () {
+//     int a = 45,b = 4;
+//     max(&a,&b);
+//     return 0;
+// }
+// void max(int *a,int *b) {
+//     if (*a>*b) 
+//     printf("%d is greater than %d\n",*a,*b);
+//     else 
+//     printf("%d is greater than %d\n",*b,*a);
+// }
+
