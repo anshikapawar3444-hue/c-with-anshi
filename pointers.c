@@ -84,12 +84,16 @@
 // syntax :
 // int **pptr , char **pptr , float **pptr
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main () {
-    int i = 5;
-    int *ptr = &i;
-    int **pptr = &ptr;
-    printf("%d\n",**pptr);
-    return 0;
-}
+// int main () {
+//     int i = 5;
+//     int *ptr = &i;
+//     int **pptr = &ptr;
+//     printf("%d\n",**pptr);
+//     return 0;
+// }
+
+// Pointers in functions call.
+// it is of two types:
+// call by value and call by reference.
