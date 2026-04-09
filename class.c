@@ -269,3 +269,138 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main () {
+//     int arr[3]={10,20,30};
+//     int (*p)[3];
+//     p =&arr;
+//     for (int i=0;i<3;i++) {
+//         printf("%d ",(*p)[i]);
+//     }
+//     return 0;
+// }
+
+// expression = meaning
+// p = address of array
+// *p = entire array
+// (*p)[i] = element
+
+// #include <stdio.h>
+
+// int main () {
+//     int a=10,b=20,c=30;
+//     int *p[3];
+//     p[0]=&a;
+//     p[1]=&b;
+//     p[2]=&c;
+//     for (int i=0;i<3;i++) {
+//         printf("%d ",*p[i]);
+//     }
+//     return 0;
+// }
+
+// rev array using pointer
+// #include <stdio.h>
+
+// int main () {
+//     int arr[] = {10,20,30,40,50};
+//     int n=5;
+//     int *start = arr;
+//     int *end = arr+n-1;
+//     while (start<end) {
+//         int temp = *start;
+//         *start = *end;
+//         *end = temp;
+//         start ++;
+//         end--;
+//     }
+//     printf("rev arr = ");
+//     for (int i=0;i<n;i++) {
+//         printf("%d ",arr[i]);
+//     }
+//     return 0;
+// }
+
+// find sum using pointer arithmetic
+// #include <stdio.h>
+
+// int main () {
+//     int arr[]= {5,10,15,20,25};
+//     int n =4;
+//     int *p=arr;
+//     int sum=0;
+//     for (int i=0;i<n;i++)  {
+//         sum=sum+*(p+i);
+//     }
+//     printf("%d",sum);
+//     return 0;
+// }
+
+// diff b/w *p++ and(*p)++
+// #include <stdio.h>
+
+// int main () {
+//     int arr[] = {10,20,30};
+//     int *p = arr;
+//     printf("%d\n",*p++);
+//     printf("%d\n",*p);
+//     int x=5;
+//     int *q=&x;
+//     printf("%d\n",(*q)++);
+//     printf("%d\n",x);
+//     return 0;
+// }
+
+// array of pointers storing marks
+// #include <stdio.h>
+
+// int main () {
+//     int m1=85,m2=90,m3=78;
+//     int *marks[3];
+//     marks[0] = &m1;
+//     marks[1] = &m2;
+//     marks[2] = &m3;
+//     for (int i=0;i<3;i++) {
+//         printf("student = %d : %d\n",i+1,*marks[i]);
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int *getmax(int *a , int *b){
+//     if(*a>*b){
+//         return a;
+//     }
+//     else{
+//         return b;
+//     }
+// }
+// int main(){
+//     int x= 10,y=20;
+//     int *max;
+//     max = getmax(&x,&y);
+//     printf("%d" , *max);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int add(int a,int b) {return a+b;}
+// int sub(int a,int b) {return a-b;}
+// int mul(int a,int b) {return a*b;}
+// int div(int a,int b) {return a/b;}
+// int main () {
+//     int a=10,b=5;
+//     int (*fp) (int , int);
+//     fp = add;
+//     printf("add = %d\n",fp(a,b));
+//     fp = sub;
+//     printf("sub = %d\n",fp(a,b));
+//     fp = mul;
+//     printf("mul = %d\n",fp(a,b));
+//     fp = div;
+//     printf("div = %d\n",fp(a,b));
+//     return 0;
+// }
+
