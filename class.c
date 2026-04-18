@@ -404,3 +404,130 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// struct student {
+//     int roll;
+//     float marks;
+// };
+// int main () {
+//     struct student s[3];
+//     int i,max=0;
+//     for (int i=0;i<3;i++) {
+//         scanf("%d %f",&s[i].roll,&s[i].marks);
+//     }
+//     for (int i=1;i<3;i++) {
+//         if (s[i].marks>s[max].marks)
+//         max=i;
+//     }
+//     printf("topper roll:%d marks :%.2f",s[max].roll,s[max].marks);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// struct Employee {
+//     int id;
+//     float salary;
+// };
+// int main () {
+//     struct Employee e;
+//     struct Employee *ptr = &e;
+//     scanf("%d %f",&ptr->id,&ptr->salary);
+//     printf("employee id :%d\nsalary : %.2f",ptr->id,ptr->salary);
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// struct Student {
+//     int marks;
+// };
+
+// int main() {
+//     struct Student s[5];      
+//     struct Student *ptr;      
+//     int i;
+//     float sum = 0, avg;
+
+//     ptr = s;  
+
+//     for(i = 0; i < 5; i++) {
+//         printf("Enter marks of student %d: ", i + 1);
+//         scanf("%d", &(ptr + i)->marks);
+//     }
+
+//     for(i = 0; i < 5; i++) {
+//         sum += (ptr + i)->marks;
+//     }
+//     avg = sum / 5;
+//     printf("Average Marks: %.2f\n", avg);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// union Data {
+//     int i;
+//     float f;
+//     char str[20];
+// };
+// int main () {
+//     union Data d;
+//     d.i = 10;
+//     printf("integer :%d\n") ;
+//     return 0;
+// }
+
+// #include <stdio.h>
+// union Result {
+//     int marks;
+//     char grade;
+// };
+// struct student {
+//     char name[50];
+//     char type;
+//     union Result res;
+// };
+// int main () {
+//     struct student s;
+//     scanf("%s",s.name);
+//     scanf("%c",&s.type);
+//     if (s.type=='M') {
+//         scanf("%d",&s.res.marks);
+//     }
+//     else {
+//         scanf("%c",&s.res.grade);
+//         printf("%s",s.name);
+//     }
+//     if (s.type=='M') {
+//         printf("Marks:%d\n",s.res.marks);
+//     }
+//     else {
+//         printf("Grade :%c\n",s.res.grade);
+//     }
+//     return 0;
+// }
+
+//  #include <stdio.h>
+//  union Price {
+//     float discount;
+//     float price;
+//  };
+//  struct Product {
+//     char name[50];
+//     char type ;
+//     union Price p;
+//  };
+//  int main () {
+//     struct Product pr;
+//     scanf("%s",pr.name);
+//     scanf("%c",&pr.type);
+
+//     return 0;
+//  }
+
+// #include <stdio.h>
+// enum Day {sun,mon,tue,wed,thur,fri,sat};
+// int main () {
+//     enum Day today = wed;
+//     printf("Day value : %d\n",today);
+//     return 0;
+// }
