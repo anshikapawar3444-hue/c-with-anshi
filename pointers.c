@@ -1,6 +1,6 @@
 // Pointers = a variable that stores the memory address of another variable. 
 
-// Syntax , * = value at address , & = address of operator. 
+// Syntax , * = value at address(indirection) , & = address of operator. 
 
 // int age = 22;
 // int *ptr = &age ;
