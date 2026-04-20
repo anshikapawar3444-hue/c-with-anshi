@@ -2,6 +2,15 @@
 
 // Syntax , * = value at address(indirection) , & = address of operator. 
 
+// Declaration :
+// 1. int a[5] = a is an array of integer 5
+// 2. int *p[5] = p is an array of 5 elements which are all pointers to integers
+// 3. int (*p)[10] = p is pointer to an array of 10 integers
+// 4. char **a = a is a pointer to pointer to a character
+// 5. char *c() = c is a function which return a pointer to a character
+// 6. char (*c)() = c is a pointer to a function which return character 
+
+
 // int age = 22;
 // int *ptr = &age ;
 // int _age = *ptr;
@@ -194,9 +203,31 @@
 //     printf("%d is greater than %d\n",*b,*a);
 // }
 
-#include <stdio.h>
+// ARRAY POINTERS
 
-int main () {
-    
-    return 0;
-}
+// #include <stdio.h>
+
+// int main () {
+//     int x[5] = {1,2,3,4,5};
+//     int *p;
+//     p=&x[0];
+//     printf("%d\n",x[0]);
+//     printf("%d\n",*p);
+//     printf("%d\n",*p++);
+//     printf("%d\n",++*p);
+//     printf("%d\n",*(p+4));
+//     printf("%d\n",*(p-1));
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main () {
+//     int a = 10;
+//     int *p = &a;
+//     printf("%d\n",a);
+//     printf("%p\n",&a);
+//     printf("%p\n",p);
+//     printf("%d\n",*p);
+//     return 0;
+// }
