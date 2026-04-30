@@ -81,3 +81,53 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// void printArray(int *p,int n) {
+//     for (int i=0;i<n;i++) {
+//         printf("%d ",*(p+i));
+//     }
+// }
+// int main () { 
+    // int arr[]={1,2,3,4,5};
+    // printArray(arr,5);
+    // return 0;
+// }
+
+// #include <stdio.h>
+// int sumArr(int *p,int n) {
+//     int sum=0;
+//     for (int i=0;i<n;i++) {
+//         sum+=*(p+i);
+//     }
+//     return sum;
+// }
+// int main () {
+//     int arr[]={1,2,3,4,5};
+//     printf("%d",sumArr(arr,5));
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// void reverse(int *p,int n){
+//     int *start=p;
+//     int *end=p+n-1;
+//     int temp;
+//     while(start<end)
+//     {
+//         temp=*start;
+//         *start=*end;
+//         *end=temp;
+
+//         start++;
+//         end--;
+//     }
+// }
+// int main()
+// {
+//     int arr[]={1,2,3,4,5};
+//     reverse(arr,5);
+//     for(int i=0;i<5;i++)
+//         printf("%d ",arr[i]);
+// }
+
