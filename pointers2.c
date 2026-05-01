@@ -235,3 +235,113 @@
 // void fun(int *p);        // passing pointer
 // int* fun();             // returning pointer
 // int (*fp)(int,int);     // function pointer
+
+// ques on passing pointer to a function
+
+// 1. square no
+// #include <stdio.h>
+// void square (int *n) {
+//     *n=*n**n;
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     square(&n);
+//     printf("%d ",n);
+//     return 0;
+// }
+
+// 2. add two no 
+// #include <stdio.h>
+// void add(int *a,int *b) {
+//     printf("%d ",*a+*b);
+// }
+// int main () {
+//     int a,b;
+//     scanf("%d %d",&a,&b);
+//     add(&a,&b);
+//     return 0;
+// }
+
+// 3. print array
+// #include <stdio.h>
+// void printArr(int *arr,int n) {
+//     for (int i=0;i<n;i++) {
+//         printf("%d ",*(arr+i));
+//     }
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for (int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     printArr(arr,n);
+//     return 0;
+// }
+
+// 4.sum of array elements
+// #include <stdio.h>
+// void sumArr (int *arr,int n) {
+//     int sum = 0;
+//     for (int i=0;i<n;i++) {
+//         sum+=arr[i];
+//     }
+//     printf("%d ",sum);
+// }
+// int main () {
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for (int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     sumArr(arr,n);
+//     return 0;
+// }
+
+// 5. max element
+// #include <stdio.h>
+// void max_no (int *arr,int n,int *max) {
+//     *max=arr[0];
+//     for (int i=1;i<n;i++) {
+//         if (arr[i]>*max) {
+//             *max=arr[i];
+//         }
+//     }
+// }
+// int main () {
+//     int n,max;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for (int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     max_no(arr,n,&max);
+//     printf("%d",max);
+//     return 0;
+// }
+
+// count odd no.
+// #include <stdio.h>
+// void odd_no(int *arr,int n,int *count) {
+//     *count = 0;
+//     for (int i=0;i<n;i++) {
+//         if (arr[i]%2!=0) {
+//             (*count)++;
+//         }
+//     }
+// }
+// int main () {
+//     int n,count;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for (int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     odd_no(arr,n,&count);
+//     printf("%d\n",count);
+//     return 0;
+// }
+
